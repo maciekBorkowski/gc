@@ -21,7 +21,8 @@ public class MyRun implements Runnable {
             Runner.finished.add(true);
         } else if(type.equals("count")) {
             while(true) {
-                MemoryEater.alloc(10);
+                int randomNum = 0 + (int)(Math.random()*20); 
+                MemoryEater.alloc(randomNum);
                 Runner.counters[this.index]++;
             }
         }

@@ -6,7 +6,7 @@ import java.util.TimerTask;
 
 public class Runner {
     static ArrayList<Boolean> finished = new ArrayList<Boolean>();
-    static int threadsCount = 1;    
+    static int threadsCount = 4;    
     static int[] counters = new int[threadsCount];
     static Runnable[] runners = new Runnable[threadsCount];
     static Thread[] threads = new Thread[threadsCount];
